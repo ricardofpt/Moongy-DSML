@@ -1,0 +1,104 @@
+feature,mean_importance
+Race_ White,-0.0020677304908869876
+fnlwgt,-0.0014979274565323553
+Education_ Some-college,-0.001258832632722129
+Education_ Masters,-0.001183494594849166
+Education_ 9th,-0.0006707347436654021
+Marital status_ Widowed,-0.0005431153406300182
+Education_ 7th-8th,-0.0005137170276945269
+Occupation_ Machine-op-inspct,-0.000393872809889384
+Native-country_ India,-0.00031635282277390207
+Native-country_ England,-0.0002971818943535709
+Native-country_ Canada,-0.00027791547160693764
+Race_ Black,-0.00022781813375606365
+Native-country_ China,-0.00019285414511741595
+Race_ Amer-Indian-Eskimo,-0.00011416760636414613
+Race_ Other,-9.762622948117361e-05
+Native-country_ Vietnam,-8.825326464164673e-05
+Native-country_ Cuba,-6.572980746180068e-05
+Native-country_ Cambodia,-6.532200334155024e-05
+Education_ Doctorate,-5.751953050463499e-05
+Race_ Asian-Pac-Islander,-4.0589071059282665e-05
+Education_ 12th,-2.569582867234521e-05
+Native-country_ Ireland,0.0
+Occupation_ Armed-Forces,0.0
+Native-country_ Honduras,0.0
+Native-country_ Hong,0.0
+Native-country_ Greece,0.0
+Native-country_ Haiti,0.0
+Native-country_ Ecuador,0.0
+Native-country_ Nicaragua,0.0
+Native-country_ Portugal,0.0
+Native-country_ Yugoslavia,0.0
+Native-country_ Scotland,0.0
+Native-country_ Trinadad&Tobago,0.0
+Native-country_ Thailand,0.0
+Education_ Preschool,0.0
+Native-country_ Taiwan,0.0
+Workclass_ Without-pay,0.0
+Native-country_ Poland,1.1965038324901478e-05
+Native-country_ Puerto-Rico,3.340656048691493e-05
+Native-country_ South,3.4366848751399284e-05
+Native-country_ Germany,4.976362172890436e-05
+Native-country_ United-States,0.00010674418342386805
+Native-country_ France,0.00012668328554650278
+Native-country_ Jamaica,0.00013081278235219652
+Native-country_ Italy,0.0001480007200932554
+Occupation_ Tech-support,0.0001502213057324009
+Native-country_ Japan,0.00016532356678971015
+Native-country_ El-Salvador,0.00016622862875121936
+Education_ 1st-4th,0.00017826207761221236
+Education_ Assoc-voc,0.00018727593481340232
+Native-country_ Guatemala,0.0001907314600990806
+Native-country_ Laos,0.0002289886895220361
+Marital status_ Married-AF-spouse,0.00024088939962083611
+Education_ 11th,0.0003359028082197013
+Native-country_ Dominican-Republic,0.0003642802264808398
+Native-country_ Iran,0.0003806979488301332
+Workclass_ Local-gov,0.0004233491109686627
+Native-country_ Hungary,0.0005456593713675129
+Native-country_ Philippines,0.000567862857515089
+Native-country_ Outlying-US(Guam-USVI-etc),0.0005787677772731148
+Occupation_ Adm-clerical,0.0005896956015882471
+Occupation_ Priv-house-serv,0.0006394370388124627
+Native-country_ Peru,0.0006643859543232101
+Education_ Bachelors,0.0007155277790492409
+Education_ 5th-6th,0.0007531328916789204
+Education_ 10th,0.0008032262470423545
+Occupation_ Craft-repair,0.0008628546377933644
+Occupation_ Protective-serv,0.0008638516904661663
+Relationship_ Other-relative,0.0008885766320008926
+Marital status_ Married-spouse-absent,0.0008969144872667756
+Occupation_ Transport-moving,0.0009844621029426515
+Education_ Assoc-acdm,0.0010014776314399177
+Occupation_ Prof-specialty,0.0010125078482807082
+Native-country_ Mexico,0.0011046402460369142
+Occupation_ Sales,0.0011169441569449322
+Workclass_ Self-emp-inc,0.0011226342080145834
+Workclass_ Private,0.0011938665349731981
+Education_ HS-grad,0.0011949998288386609
+Relationship_ Unmarried,0.0012407608544522165
+Sex_ Female,0.001305358506321508
+Relationship_ Husband,0.0013178280943558108
+Native-country_ Columbia,0.0013432100444665585
+Education_ Prof-school,0.0014066857769755802
+Workclass_ State-gov,0.0018278836397561226
+Workclass_ Self-emp-not-inc,0.0019098797207758532
+Marital status_ Separated,0.001986624880062049
+Relationship_ Not-in-family,0.002094822700518617
+Occupation_ Handlers-cleaners,0.003095365674201822
+Marital status_ Divorced,0.0034468115798358843
+Sex_ Male,0.0037819078613515076
+Capital-loss,0.0038746966094171274
+Workclass_ Federal-gov,0.004220341834166896
+Occupation_ Other-service,0.004584230231116227
+Occupation_ Farming-fishing,0.004716684713991981
+Occupation_ Exec-managerial,0.009074817874635831
+Relationship_ Wife,0.009634907053824748
+Relationship_ Own-child,0.013887259226850978
+Marital status_ Never-married,0.018793839158973702
+Marital status_ Married-civ-spouse,0.019235923620740614
+Education-num,0.028211940235970224
+Hours-per-week,0.03292018464935618
+Age,0.06366043921522398
+Capital-gain,0.18303849806649394

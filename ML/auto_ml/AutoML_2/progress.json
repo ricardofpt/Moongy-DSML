@@ -1,0 +1,1583 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 3600,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "ensemble"
+        ],
+        "algorithms": [
+            "Baseline",
+            "Decision Tree",
+            "Random Forest",
+            "Xgboost",
+            "Neural Network"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 0.17747807502746582
+            },
+            {
+                "model_name": "1_Baseline",
+                "model_type": "Baseline",
+                "fit_level": "simple_algorithms",
+                "train_time": 0.2710609436035156
+            },
+            {
+                "model_name": "2_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 13.064958572387695
+            },
+            {
+                "model_name": "3_Default_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "default_algorithms",
+                "train_time": 7.2140843868255615
+            },
+            {
+                "model_name": "4_Default_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "default_algorithms",
+                "train_time": 9.259670495986938
+            },
+            {
+                "model_name": "5_Default_RandomForest",
+                "model_type": "Random Forest",
+                "fit_level": "default_algorithms",
+                "train_time": 8.027365922927856
+            },
+            {
+                "model_name": "Ensemble",
+                "model_type": "Ensemble",
+                "fit_level": "ensemble",
+                "train_time": 2.000119686126709
+            }
+        ],
+        "is_hill_climbing": false,
+        "is_stacking": false
+    },
+    "all_params": {
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "binary_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_2/X.data",
+                    "y_path": "AutoML_2/y.data",
+                    "results_path": "AutoML_2"
+                },
+                "learner": {
+                    "model_type": "Baseline",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "binary_classification",
+                "explain_level": 2,
+                "name": "1_Baseline",
+                "status": "trained",
+                "final_loss": 0.561130049631962,
+                "train_time": 0.7759518623352051,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Workclass_ Federal-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Local-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Private": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Self-emp-inc": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Self-emp-not-inc": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ State-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Without-pay": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 10th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 11th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 12th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 1st-4th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 5th-6th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 7th-8th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 9th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Assoc-acdm": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Assoc-voc": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Bachelors": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Doctorate": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ HS-grad": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Masters": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Preschool": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Prof-school": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Some-college": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Divorced": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-AF-spouse": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-civ-spouse": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-spouse-absent": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Never-married": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Separated": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Widowed": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Adm-clerical": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Armed-Forces": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Craft-repair": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Exec-managerial": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Farming-fishing": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Handlers-cleaners": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Machine-op-inspct": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Other-service": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Priv-house-serv": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Prof-specialty": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Protective-serv": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Sales": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Tech-support": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Transport-moving": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Husband": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Not-in-family": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Other-relative": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Own-child": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Unmarried": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Wife": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Amer-Indian-Eskimo": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Asian-Pac-Islander": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Black": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Other": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ White": [
+                            "categorical_to_int"
+                        ],
+                        "Sex_ Female": [
+                            "categorical_to_int"
+                        ],
+                        "Sex_ Male": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Cambodia": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Canada": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ China": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Columbia": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Cuba": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Dominican-Republic": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Ecuador": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ El-Salvador": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ England": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ France": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Germany": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Greece": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Guatemala": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Haiti": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Honduras": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Hong": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Hungary": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ India": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Iran": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Ireland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Italy": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Jamaica": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Japan": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Laos": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Mexico": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Nicaragua": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Outlying-US(Guam-USVI-etc)": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Peru": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Philippines": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Poland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Portugal": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Puerto-Rico": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Scotland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ South": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Taiwan": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Thailand": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Trinadad&Tobago": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ United-States": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Vietnam": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Yugoslavia": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "binary_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_2/X.data",
+                    "y_path": "AutoML_2/y.data",
+                    "results_path": "AutoML_2"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "gini",
+                    "max_depth": 3,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "binary_classification",
+                "explain_level": 2,
+                "name": "2_DecisionTree",
+                "status": "trained",
+                "final_loss": 0.36574280109482254,
+                "train_time": 13.849020957946777,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Workclass_ Federal-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Local-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Private": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Self-emp-inc": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Self-emp-not-inc": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ State-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Without-pay": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 10th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 11th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 12th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 1st-4th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 5th-6th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 7th-8th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 9th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Assoc-acdm": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Assoc-voc": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Bachelors": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Doctorate": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ HS-grad": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Masters": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Preschool": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Prof-school": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Some-college": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Divorced": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-AF-spouse": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-civ-spouse": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-spouse-absent": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Never-married": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Separated": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Widowed": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Adm-clerical": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Armed-Forces": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Craft-repair": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Exec-managerial": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Farming-fishing": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Handlers-cleaners": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Machine-op-inspct": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Other-service": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Priv-house-serv": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Prof-specialty": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Protective-serv": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Sales": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Tech-support": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Transport-moving": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Husband": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Not-in-family": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Other-relative": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Own-child": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Unmarried": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Wife": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Amer-Indian-Eskimo": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Asian-Pac-Islander": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Black": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Other": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ White": [
+                            "categorical_to_int"
+                        ],
+                        "Sex_ Female": [
+                            "categorical_to_int"
+                        ],
+                        "Sex_ Male": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Cambodia": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Canada": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ China": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Columbia": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Cuba": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Dominican-Republic": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Ecuador": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ El-Salvador": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ England": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ France": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Germany": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Greece": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Guatemala": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Haiti": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Honduras": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Hong": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Hungary": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ India": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Iran": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Ireland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Italy": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Jamaica": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Japan": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Laos": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Mexico": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Nicaragua": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Outlying-US(Guam-USVI-etc)": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Peru": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Philippines": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Poland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Portugal": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Puerto-Rico": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Scotland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ South": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Taiwan": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Thailand": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Trinadad&Tobago": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ United-States": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Vietnam": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Yugoslavia": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "binary_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_2/X.data",
+                    "y_path": "AutoML_2/y.data",
+                    "results_path": "AutoML_2"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1,
+                    "objective": "binary:logistic",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 3,
+                    "eval_metric": "logloss",
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "binary_classification",
+                "explain_level": 2,
+                "name": "3_Default_Xgboost",
+                "status": "trained",
+                "final_loss": 0.27805661929848147,
+                "train_time": 8.047159910202026,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Age": [
+                            "scale_normal"
+                        ],
+                        "fnlwgt": [
+                            "scale_normal"
+                        ],
+                        "Education-num": [
+                            "scale_normal"
+                        ],
+                        "Capital-gain": [
+                            "scale_normal"
+                        ],
+                        "Capital-loss": [
+                            "scale_normal"
+                        ],
+                        "Hours-per-week": [
+                            "scale_normal"
+                        ],
+                        "Workclass_ Federal-gov": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Workclass_ Local-gov": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Workclass_ Private": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Workclass_ Self-emp-inc": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Workclass_ Self-emp-not-inc": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Workclass_ State-gov": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Workclass_ Without-pay": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ 10th": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ 11th": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ 12th": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ 1st-4th": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ 5th-6th": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ 7th-8th": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ 9th": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Assoc-acdm": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Assoc-voc": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Bachelors": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Doctorate": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ HS-grad": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Masters": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Preschool": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Prof-school": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Education_ Some-college": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Marital status_ Divorced": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Marital status_ Married-AF-spouse": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Marital status_ Married-civ-spouse": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Marital status_ Married-spouse-absent": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Marital status_ Never-married": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Marital status_ Separated": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Marital status_ Widowed": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Adm-clerical": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Armed-Forces": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Craft-repair": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Exec-managerial": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Farming-fishing": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Handlers-cleaners": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Machine-op-inspct": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Other-service": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Priv-house-serv": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Prof-specialty": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Protective-serv": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Sales": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Tech-support": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Occupation_ Transport-moving": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Relationship_ Husband": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Relationship_ Not-in-family": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Relationship_ Other-relative": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Relationship_ Own-child": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Relationship_ Unmarried": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Relationship_ Wife": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Race_ Amer-Indian-Eskimo": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Race_ Asian-Pac-Islander": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Race_ Black": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Race_ Other": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Race_ White": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Sex_ Female": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Sex_ Male": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Cambodia": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Canada": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ China": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Columbia": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Cuba": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Dominican-Republic": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Ecuador": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ El-Salvador": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ England": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ France": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Germany": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Greece": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Guatemala": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Haiti": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Honduras": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Hong": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Hungary": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ India": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Iran": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Ireland": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Italy": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Jamaica": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Japan": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Laos": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Mexico": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Nicaragua": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Outlying-US(Guam-USVI-etc)": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Peru": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Philippines": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Poland": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Portugal": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Puerto-Rico": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Scotland": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ South": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Taiwan": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Thailand": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Trinadad&Tobago": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ United-States": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Vietnam": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Native-country_ Yugoslavia": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "binary_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_2/X.data",
+                    "y_path": "AutoML_2/y.data",
+                    "results_path": "AutoML_2"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "binary_classification",
+                "explain_level": 2,
+                "name": "4_Default_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.3364000344123812,
+                "train_time": 9.96161675453186,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Workclass_ Federal-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Local-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Private": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Self-emp-inc": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Self-emp-not-inc": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ State-gov": [
+                            "categorical_to_int"
+                        ],
+                        "Workclass_ Without-pay": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 10th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 11th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 12th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 1st-4th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 5th-6th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 7th-8th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ 9th": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Assoc-acdm": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Assoc-voc": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Bachelors": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Doctorate": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ HS-grad": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Masters": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Preschool": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Prof-school": [
+                            "categorical_to_int"
+                        ],
+                        "Education_ Some-college": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Divorced": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-AF-spouse": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-civ-spouse": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Married-spouse-absent": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Never-married": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Separated": [
+                            "categorical_to_int"
+                        ],
+                        "Marital status_ Widowed": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Adm-clerical": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Armed-Forces": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Craft-repair": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Exec-managerial": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Farming-fishing": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Handlers-cleaners": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Machine-op-inspct": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Other-service": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Priv-house-serv": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Prof-specialty": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Protective-serv": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Sales": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Tech-support": [
+                            "categorical_to_int"
+                        ],
+                        "Occupation_ Transport-moving": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Husband": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Not-in-family": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Other-relative": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Own-child": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Unmarried": [
+                            "categorical_to_int"
+                        ],
+                        "Relationship_ Wife": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Amer-Indian-Eskimo": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Asian-Pac-Islander": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Black": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ Other": [
+                            "categorical_to_int"
+                        ],
+                        "Race_ White": [
+                            "categorical_to_int"
+                        ],
+                        "Sex_ Female": [
+                            "categorical_to_int"
+                        ],
+                        "Sex_ Male": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Cambodia": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Canada": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ China": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Columbia": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Cuba": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Dominican-Republic": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Ecuador": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ El-Salvador": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ England": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ France": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Germany": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Greece": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Guatemala": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Haiti": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Honduras": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Hong": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Hungary": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ India": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Iran": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Ireland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Italy": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Jamaica": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Japan": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Laos": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Mexico": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Nicaragua": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Outlying-US(Guam-USVI-etc)": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Peru": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Philippines": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Poland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Portugal": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Puerto-Rico": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Scotland": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ South": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Taiwan": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Thailand": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Trinadad&Tobago": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ United-States": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Vietnam": [
+                            "categorical_to_int"
+                        ],
+                        "Native-country_ Yugoslavia": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "binary_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_2/X.data",
+                    "y_path": "AutoML_2/y.data",
+                    "results_path": "AutoML_2"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 5,
+                    "eval_metric_name": "logloss",
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "binary_classification",
+                "explain_level": 2,
+                "name": "5_Default_RandomForest",
+                "status": "trained",
+                "final_loss": 0.3418730530466089,
+                "train_time": 8.86612606048584,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "trained",
+                "final_loss": 0.27805661929848147,
+                "train_time": 2.000119686126709
+            }
+        ]
+    },
+    "adjust_validation": false
+}

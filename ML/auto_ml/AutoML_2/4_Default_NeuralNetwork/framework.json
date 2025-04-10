@@ -1,0 +1,1821 @@
+{
+    "uid": "30e1d5d9-9357-4855-92d5-71d33ee1d3cc",
+    "name": "4_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Workclass_ Federal-gov": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Workclass_ Local-gov": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Workclass_ Private": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Workclass_ Self-emp-inc": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Workclass_ Self-emp-not-inc": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Workclass_ State-gov": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Workclass_ Without-pay": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ 10th": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ 11th": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ 12th": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ 1st-4th": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ 5th-6th": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ 7th-8th": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ 9th": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Assoc-acdm": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Assoc-voc": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Bachelors": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Doctorate": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ HS-grad": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Masters": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Preschool": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Prof-school": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Education_ Some-college": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Marital status_ Divorced": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Marital status_ Married-AF-spouse": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Marital status_ Married-civ-spouse": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Marital status_ Married-spouse-absent": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Marital status_ Never-married": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Marital status_ Separated": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Marital status_ Widowed": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Adm-clerical": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Armed-Forces": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Craft-repair": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Exec-managerial": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Farming-fishing": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Handlers-cleaners": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Machine-op-inspct": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Other-service": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Priv-house-serv": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Prof-specialty": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Protective-serv": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Sales": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Tech-support": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Occupation_ Transport-moving": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Relationship_ Husband": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Relationship_ Not-in-family": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Relationship_ Other-relative": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Relationship_ Own-child": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Relationship_ Unmarried": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Relationship_ Wife": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Race_ Amer-Indian-Eskimo": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Race_ Asian-Pac-Islander": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Race_ Black": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Race_ Other": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Race_ White": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Sex_ Female": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Sex_ Male": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Cambodia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Columbia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Cuba": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Dominican-Republic": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Ecuador": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ El-Salvador": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ England": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Greece": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Guatemala": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Haiti": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Honduras": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Hong": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Hungary": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Iran": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Ireland": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Italy": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Jamaica": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Laos": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Mexico": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Nicaragua": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Outlying-US(Guam-USVI-etc)": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Peru": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Philippines": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Poland": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Portugal": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Puerto-Rico": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Scotland": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ South": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Taiwan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Thailand": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Trinadad&Tobago": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ United-States": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Vietnam": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Native-country_ Yugoslavia": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Workclass_ Federal-gov",
+                        "Workclass_ Local-gov",
+                        "Workclass_ Private",
+                        "Workclass_ Self-emp-inc",
+                        "Workclass_ Self-emp-not-inc",
+                        "Workclass_ State-gov",
+                        "Workclass_ Without-pay",
+                        "Education_ 10th",
+                        "Education_ 11th",
+                        "Education_ 12th",
+                        "Education_ 1st-4th",
+                        "Education_ 5th-6th",
+                        "Education_ 7th-8th",
+                        "Education_ 9th",
+                        "Education_ Assoc-acdm",
+                        "Education_ Assoc-voc",
+                        "Education_ Bachelors",
+                        "Education_ Doctorate",
+                        "Education_ HS-grad",
+                        "Education_ Masters",
+                        "Education_ Preschool",
+                        "Education_ Prof-school",
+                        "Education_ Some-college",
+                        "Marital status_ Divorced",
+                        "Marital status_ Married-AF-spouse",
+                        "Marital status_ Married-civ-spouse",
+                        "Marital status_ Married-spouse-absent",
+                        "Marital status_ Never-married",
+                        "Marital status_ Separated",
+                        "Marital status_ Widowed",
+                        "Occupation_ Adm-clerical",
+                        "Occupation_ Armed-Forces",
+                        "Occupation_ Craft-repair",
+                        "Occupation_ Exec-managerial",
+                        "Occupation_ Farming-fishing",
+                        "Occupation_ Handlers-cleaners",
+                        "Occupation_ Machine-op-inspct",
+                        "Occupation_ Other-service",
+                        "Occupation_ Priv-house-serv",
+                        "Occupation_ Prof-specialty",
+                        "Occupation_ Protective-serv",
+                        "Occupation_ Sales",
+                        "Occupation_ Tech-support",
+                        "Occupation_ Transport-moving",
+                        "Relationship_ Husband",
+                        "Relationship_ Not-in-family",
+                        "Relationship_ Other-relative",
+                        "Relationship_ Own-child",
+                        "Relationship_ Unmarried",
+                        "Relationship_ Wife",
+                        "Race_ Amer-Indian-Eskimo",
+                        "Race_ Asian-Pac-Islander",
+                        "Race_ Black",
+                        "Race_ Other",
+                        "Race_ White",
+                        "Sex_ Female",
+                        "Sex_ Male",
+                        "Native-country_ Cambodia",
+                        "Native-country_ Canada",
+                        "Native-country_ China",
+                        "Native-country_ Columbia",
+                        "Native-country_ Cuba",
+                        "Native-country_ Dominican-Republic",
+                        "Native-country_ Ecuador",
+                        "Native-country_ El-Salvador",
+                        "Native-country_ England",
+                        "Native-country_ France",
+                        "Native-country_ Germany",
+                        "Native-country_ Greece",
+                        "Native-country_ Guatemala",
+                        "Native-country_ Haiti",
+                        "Native-country_ Honduras",
+                        "Native-country_ Hong",
+                        "Native-country_ Hungary",
+                        "Native-country_ India",
+                        "Native-country_ Iran",
+                        "Native-country_ Ireland",
+                        "Native-country_ Italy",
+                        "Native-country_ Jamaica",
+                        "Native-country_ Japan",
+                        "Native-country_ Laos",
+                        "Native-country_ Mexico",
+                        "Native-country_ Nicaragua",
+                        "Native-country_ Outlying-US(Guam-USVI-etc)",
+                        "Native-country_ Peru",
+                        "Native-country_ Philippines",
+                        "Native-country_ Poland",
+                        "Native-country_ Portugal",
+                        "Native-country_ Puerto-Rico",
+                        "Native-country_ Scotland",
+                        "Native-country_ South",
+                        "Native-country_ Taiwan",
+                        "Native-country_ Thailand",
+                        "Native-country_ Trinadad&Tobago",
+                        "Native-country_ United-States",
+                        "Native-country_ Vietnam",
+                        "Native-country_ Yugoslavia"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        13.14334578684146,
+                        106258.8572612915,
+                        2.5453762677630647,
+                        7637.095446499782,
+                        402.2403523779414,
+                        12.03894951683806,
+                        0.1725717100831441,
+                        0.25399613566971313,
+                        0.43920830221437557,
+                        0.18526054966247066,
+                        0.27651864707362606,
+                        0.19926768700061934,
+                        0.023966275243670163,
+                        0.16276033446286156,
+                        0.1825783552769821,
+                        0.11134462832389075,
+                        0.06956511212946398,
+                        0.09791814103662157,
+                        0.13609098063615674,
+                        0.12061371544932911,
+                        0.1784676753089649,
+                        0.204279295243746,
+                        0.3726384500977016,
+                        0.10958823335262124,
+                        0.4688272926996352,
+                        0.2251011232178677,
+                        0.03930533200505231,
+                        0.13147419097775737,
+                        0.4164270853259202,
+                        0.34524487605550913,
+                        0.024870429127585855,
+                        0.4990794168561851,
+                        0.11095684437852268,
+                        0.4667416847013047,
+                        0.17353041912852255,
+                        0.162503282993157,
+                        0.3271509635578366,
+                        0.014865882561768675,
+                        0.34074348918397873,
+                        0.33931367393937345,
+                        0.17927546280362655,
+                        0.20847420815200454,
+                        0.24766905799429373,
+                        0.30807963923308995,
+                        0.06829464673618732,
+                        0.33974379396052307,
+                        0.14308543316940725,
+                        0.32447496144794846,
+                        0.16818070267805516,
+                        0.22395760573064016,
+                        0.49313309422110896,
+                        0.4364781531407134,
+                        0.1683044252436637,
+                        0.35343742397504363,
+                        0.30643375989926924,
+                        0.2096268234060373,
+                        0.09769650840543972,
+                        0.1694133433053483,
+                        0.29236428822808797,
+                        0.08686812541931571,
+                        0.34823029240086956,
+                        0.4672153507286712,
+                        0.4672153507286712,
+                        0.023026561712690408,
+                        0.05748614035862025,
+                        0.04742951085213543,
+                        0.043050160899276005,
+                        0.05434341928347537,
+                        0.044558189462419996,
+                        0.029721903296147847,
+                        0.05862068965517241,
+                        0.05554304594840974,
+                        0.03117121581257024,
+                        0.06601138304275356,
+                        0.0332264219962885,
+                        0.04834841582731163,
+                        0.036994464824239064,
+                        0.022046741953159827,
+                        0.0265864309455742,
+                        0.0175887716567044,
+                        0.055146105490506525,
+                        0.03816749393730002,
+                        0.03187107484632115,
+                        0.04742951085213543,
+                        0.04969462965881287,
+                        0.043050160899276005,
+                        0.022046741953159827,
+                        0.1403934885092656,
+                        0.03578278394090478,
+                        0.019942910449446977,
+                        0.03117121581257024,
+                        0.07925827042713299,
+                        0.0440612928249868,
+                        0.03187107484632115,
+                        0.05786682886520948,
+                        0.018802772061566525,
+                        0.049250020214209315,
+                        0.03758558187588561,
+                        0.025742770482469066,
+                        0.025742770482469066,
+                        0.28377264788782625,
+                        0.046492279478281245,
+                        0.024870429127585855
+                    ],
+                    "mean": [
+                        38.47727674624226,
+                        189509.1675066313,
+                        10.11290893015031,
+                        1123.9670203359858,
+                        87.73793103448276,
+                        41.00583554376658,
+                        0.03072502210433245,
+                        0.06931918656056588,
+                        0.73894783377542,
+                        0.035587975243147656,
+                        0.08342175066312997,
+                        0.041423519009725907,
+                        0.0005747126436781609,
+                        0.027232537577365164,
+                        0.034526967285587976,
+                        0.0125552608311229,
+                        0.004862953138815208,
+                        0.009681697612732095,
+                        0.018877099911582672,
+                        0.014765694076038904,
+                        0.03293545534924845,
+                        0.04363395225464191,
+                        0.16662245800176834,
+                        0.01215738284703802,
+                        0.3262157382847038,
+                        0.0535366931918656,
+                        0.0015473032714412025,
+                        0.017595048629531387,
+                        0.22325375773651635,
+                        0.1383289124668435,
+                        0.000618921308576481,
+                        0.46967285587975244,
+                        0.01246684350132626,
+                        0.32068965517241377,
+                        0.03107869142351901,
+                        0.027144120247568522,
+                        0.12188328912466843,
+                        0.00022104332449160034,
+                        0.1340848806366048,
+                        0.13275862068965516,
+                        0.03324491600353669,
+                        0.04553492484526967,
+                        0.0656498673740053,
+                        0.10618921308576482,
+                        0.004686118479221927,
+                        0.13315649867374005,
+                        0.020910698496905394,
+                        0.11958443854995579,
+                        0.029133510167992926,
+                        0.052961980548187446,
+                        0.4174182139699381,
+                        0.25610079575596817,
+                        0.029177718832891247,
+                        0.14633068081343945,
+                        0.10490716180371353,
+                        0.046065428824049515,
+                        0.009637488947833775,
+                        0.029575596816976128,
+                        0.09438549955791335,
+                        0.007603890362511052,
+                        0.8587975243147657,
+                        0.32192749778956675,
+                        0.6780725022104332,
+                        0.0005305039787798408,
+                        0.0033156498673740055,
+                        0.0022546419098143236,
+                        0.001856763925729443,
+                        0.0029619805481874446,
+                        0.001989389920424403,
+                        0.0008841732979664014,
+                        0.0034482758620689655,
+                        0.003094606542882405,
+                        0.0009725906277630416,
+                        0.004376657824933687,
+                        0.0011052166224580018,
+                        0.0023430592396109636,
+                        0.0013704686118479223,
+                        0.0004862953138815208,
+                        0.0007073386383731211,
+                        0.0003094606542882405,
+                        0.003050397877984085,
+                        0.0014588859416445623,
+                        0.0010167992926613616,
+                        0.0022546419098143236,
+                        0.002475685234305924,
+                        0.001856763925729443,
+                        0.0004862953138815208,
+                        0.020114942528735632,
+                        0.001282051282051282,
+                        0.0003978779840848806,
+                        0.0009725906277630416,
+                        0.00632183908045977,
+                        0.0019451812555260832,
+                        0.0010167992926613616,
+                        0.0033598585322723255,
+                        0.00035366931918656057,
+                        0.002431476569407604,
+                        0.0014146772767462423,
+                        0.000663129973474801,
+                        0.000663129973474801,
+                        0.9116710875331565,
+                        0.0021662245800176836,
+                        0.000618921308576481
+                    ],
+                    "var": [
+                        172.74753847248314,
+                        11290944746.475523,
+                        6.478940344491428,
+                        58325226.8589477,
+                        161797.30108113048,
+                        144.93630546897535,
+                        0.029780995121020733,
+                        0.06451403693514733,
+                        0.19290393273403428,
+                        0.03432147126124076,
+                        0.07646256217942857,
+                        0.039707611082576796,
+                        0.0005743823490553573,
+                        0.026490926474462557,
+                        0.0333348558156479,
+                        0.012397626256585373,
+                        0.004839304825584896,
+                        0.009587962344067714,
+                        0.01852075501051079,
+                        0.014547668354491733,
+                        0.031850711130186116,
+                        0.041730030465281544,
+                        0.13885941449121725,
+                        0.012009580889348568,
+                        0.21979903038006943,
+                        0.050670515673945656,
+                        0.0015449091240273894,
+                        0.017285462893255818,
+                        0.17341151739304123,
+                        0.11919402444258385,
+                        0.0006185382449902709,
+                        0.24908026432950978,
+                        0.012311421314439701,
+                        0.21784780023781214,
+                        0.030112806362920703,
+                        0.026407316983554068,
+                        0.10702775295682096,
+                        0.000220994464340298,
+                        0.11610612542127222,
+                        0.11513376932223544,
+                        0.03213969156345448,
+                        0.043461495464605315,
+                        0.061339962287780825,
+                        0.09491306410999087,
+                        0.004664158772820622,
+                        0.11542584553469035,
+                        0.020473441185276907,
+                        0.10528400060664765,
+                        0.028284748753284388,
+                        0.05015700916460086,
+                        0.24318024861608512,
+                        0.19051317816912808,
+                        0.028326379556599987,
+                        0.12491801266611476,
+                        0.09390164920600298,
+                        0.04394340509130595,
+                        0.009544607754614156,
+                        0.028700880889895797,
+                        0.0854768770311165,
+                        0.0075460712138659645,
+                        0.12126433654559511,
+                        0.21829018395651525,
+                        0.21829018395651525,
+                        0.0005302225443083397,
+                        0.0033046563333309882,
+                        0.0022495584996728327,
+                        0.0018533163534535527,
+                        0.002953207219419603,
+                        0.0019854322481689165,
+                        0.0008833915355455642,
+                        0.003436385255648038,
+                        0.003085029953227155,
+                        0.000971644695233829,
+                        0.004357502691217132,
+                        0.0011039951186754444,
+                        0.0023375693130106372,
+                        0.0013685904276318616,
+                        0.0004860588307492176,
+                        0.0007068383104237854,
+                        0.000309364888391688,
+                        0.003041092950770074,
+                        0.0014567575934538337,
+                        0.0010157654118598046,
+                        0.0022495584996728327,
+                        0.002469556216926564,
+                        0.0018533163534535527,
+                        0.00048605883074921756,
+                        0.019710331615801296,
+                        0.0012804076265614732,
+                        0.0003977196771946614,
+                        0.000971644695233829,
+                        0.006281873431100543,
+                        0.0019413975254092334,
+                        0.0010157654118598046,
+                        0.0033485698829154413,
+                        0.00035354423719922664,
+                        0.002425564491100026,
+                        0.0014126759649489005,
+                        0.0006626902321130806,
+                        0.0006626902321130806,
+                        0.0805269156892682,
+                        0.0021615320510866114,
+                        0.0006185382449902709
+                    ],
+                    "n_samples_seen": 22620,
+                    "n_features_in": 103,
+                    "columns": [
+                        "Age",
+                        "fnlwgt",
+                        "Education-num",
+                        "Capital-gain",
+                        "Capital-loss",
+                        "Hours-per-week",
+                        "Workclass_ Federal-gov",
+                        "Workclass_ Local-gov",
+                        "Workclass_ Private",
+                        "Workclass_ Self-emp-inc",
+                        "Workclass_ Self-emp-not-inc",
+                        "Workclass_ State-gov",
+                        "Workclass_ Without-pay",
+                        "Education_ 10th",
+                        "Education_ 11th",
+                        "Education_ 12th",
+                        "Education_ 1st-4th",
+                        "Education_ 5th-6th",
+                        "Education_ 7th-8th",
+                        "Education_ 9th",
+                        "Education_ Assoc-acdm",
+                        "Education_ Assoc-voc",
+                        "Education_ Bachelors",
+                        "Education_ Doctorate",
+                        "Education_ HS-grad",
+                        "Education_ Masters",
+                        "Education_ Preschool",
+                        "Education_ Prof-school",
+                        "Education_ Some-college",
+                        "Marital status_ Divorced",
+                        "Marital status_ Married-AF-spouse",
+                        "Marital status_ Married-civ-spouse",
+                        "Marital status_ Married-spouse-absent",
+                        "Marital status_ Never-married",
+                        "Marital status_ Separated",
+                        "Marital status_ Widowed",
+                        "Occupation_ Adm-clerical",
+                        "Occupation_ Armed-Forces",
+                        "Occupation_ Craft-repair",
+                        "Occupation_ Exec-managerial",
+                        "Occupation_ Farming-fishing",
+                        "Occupation_ Handlers-cleaners",
+                        "Occupation_ Machine-op-inspct",
+                        "Occupation_ Other-service",
+                        "Occupation_ Priv-house-serv",
+                        "Occupation_ Prof-specialty",
+                        "Occupation_ Protective-serv",
+                        "Occupation_ Sales",
+                        "Occupation_ Tech-support",
+                        "Occupation_ Transport-moving",
+                        "Relationship_ Husband",
+                        "Relationship_ Not-in-family",
+                        "Relationship_ Other-relative",
+                        "Relationship_ Own-child",
+                        "Relationship_ Unmarried",
+                        "Relationship_ Wife",
+                        "Race_ Amer-Indian-Eskimo",
+                        "Race_ Asian-Pac-Islander",
+                        "Race_ Black",
+                        "Race_ Other",
+                        "Race_ White",
+                        "Sex_ Female",
+                        "Sex_ Male",
+                        "Native-country_ Cambodia",
+                        "Native-country_ Canada",
+                        "Native-country_ China",
+                        "Native-country_ Columbia",
+                        "Native-country_ Cuba",
+                        "Native-country_ Dominican-Republic",
+                        "Native-country_ Ecuador",
+                        "Native-country_ El-Salvador",
+                        "Native-country_ England",
+                        "Native-country_ France",
+                        "Native-country_ Germany",
+                        "Native-country_ Greece",
+                        "Native-country_ Guatemala",
+                        "Native-country_ Haiti",
+                        "Native-country_ Honduras",
+                        "Native-country_ Hong",
+                        "Native-country_ Hungary",
+                        "Native-country_ India",
+                        "Native-country_ Iran",
+                        "Native-country_ Ireland",
+                        "Native-country_ Italy",
+                        "Native-country_ Jamaica",
+                        "Native-country_ Japan",
+                        "Native-country_ Laos",
+                        "Native-country_ Mexico",
+                        "Native-country_ Nicaragua",
+                        "Native-country_ Outlying-US(Guam-USVI-etc)",
+                        "Native-country_ Peru",
+                        "Native-country_ Philippines",
+                        "Native-country_ Poland",
+                        "Native-country_ Portugal",
+                        "Native-country_ Puerto-Rico",
+                        "Native-country_ Scotland",
+                        "Native-country_ South",
+                        "Native-country_ Taiwan",
+                        "Native-country_ Thailand",
+                        "Native-country_ Trinadad&Tobago",
+                        "Native-country_ United-States",
+                        "Native-country_ Vietnam",
+                        "Native-country_ Yugoslavia"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Age": [
+                        "scale_normal"
+                    ],
+                    "fnlwgt": [
+                        "scale_normal"
+                    ],
+                    "Education-num": [
+                        "scale_normal"
+                    ],
+                    "Capital-gain": [
+                        "scale_normal"
+                    ],
+                    "Capital-loss": [
+                        "scale_normal"
+                    ],
+                    "Hours-per-week": [
+                        "scale_normal"
+                    ],
+                    "Workclass_ Federal-gov": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Workclass_ Local-gov": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Workclass_ Private": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Workclass_ Self-emp-inc": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Workclass_ Self-emp-not-inc": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Workclass_ State-gov": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Workclass_ Without-pay": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ 10th": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ 11th": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ 12th": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ 1st-4th": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ 5th-6th": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ 7th-8th": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ 9th": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Assoc-acdm": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Assoc-voc": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Bachelors": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Doctorate": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ HS-grad": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Masters": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Preschool": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Prof-school": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Education_ Some-college": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Marital status_ Divorced": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Marital status_ Married-AF-spouse": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Marital status_ Married-civ-spouse": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Marital status_ Married-spouse-absent": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Marital status_ Never-married": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Marital status_ Separated": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Marital status_ Widowed": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Adm-clerical": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Armed-Forces": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Craft-repair": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Exec-managerial": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Farming-fishing": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Handlers-cleaners": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Machine-op-inspct": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Other-service": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Priv-house-serv": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Prof-specialty": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Protective-serv": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Sales": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Tech-support": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Occupation_ Transport-moving": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Relationship_ Husband": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Relationship_ Not-in-family": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Relationship_ Other-relative": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Relationship_ Own-child": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Relationship_ Unmarried": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Relationship_ Wife": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Race_ Amer-Indian-Eskimo": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Race_ Asian-Pac-Islander": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Race_ Black": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Race_ Other": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Race_ White": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Sex_ Female": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Sex_ Male": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Cambodia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Columbia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Cuba": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Dominican-Republic": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Ecuador": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ El-Salvador": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ England": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Greece": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Guatemala": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Haiti": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Honduras": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Hong": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Hungary": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Iran": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Ireland": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Italy": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Jamaica": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Laos": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Mexico": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Nicaragua": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Outlying-US(Guam-USVI-etc)": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Peru": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Philippines": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Poland": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Portugal": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Puerto-Rico": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Scotland": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ South": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Taiwan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Thailand": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Trinadad&Tobago": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ United-States": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Vietnam": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Native-country_ Yugoslavia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.3.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "a8e9f041-affd-47e8-9970-594b0e24f548",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 4,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Age": [
+                    "scale_normal"
+                ],
+                "fnlwgt": [
+                    "scale_normal"
+                ],
+                "Education-num": [
+                    "scale_normal"
+                ],
+                "Capital-gain": [
+                    "scale_normal"
+                ],
+                "Capital-loss": [
+                    "scale_normal"
+                ],
+                "Hours-per-week": [
+                    "scale_normal"
+                ],
+                "Workclass_ Federal-gov": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Workclass_ Local-gov": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Workclass_ Private": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Workclass_ Self-emp-inc": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Workclass_ Self-emp-not-inc": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Workclass_ State-gov": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Workclass_ Without-pay": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ 10th": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ 11th": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ 12th": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ 1st-4th": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ 5th-6th": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ 7th-8th": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ 9th": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Assoc-acdm": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Assoc-voc": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Bachelors": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Doctorate": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ HS-grad": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Masters": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Preschool": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Prof-school": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Education_ Some-college": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Marital status_ Divorced": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Marital status_ Married-AF-spouse": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Marital status_ Married-civ-spouse": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Marital status_ Married-spouse-absent": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Marital status_ Never-married": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Marital status_ Separated": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Marital status_ Widowed": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Adm-clerical": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Armed-Forces": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Craft-repair": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Exec-managerial": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Farming-fishing": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Handlers-cleaners": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Machine-op-inspct": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Other-service": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Priv-house-serv": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Prof-specialty": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Protective-serv": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Sales": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Tech-support": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Occupation_ Transport-moving": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Relationship_ Husband": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Relationship_ Not-in-family": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Relationship_ Other-relative": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Relationship_ Own-child": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Relationship_ Unmarried": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Relationship_ Wife": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Race_ Amer-Indian-Eskimo": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Race_ Asian-Pac-Islander": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Race_ Black": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Race_ Other": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Race_ White": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Sex_ Female": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Sex_ Male": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Cambodia": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Canada": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ China": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Columbia": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Cuba": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Dominican-Republic": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Ecuador": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ El-Salvador": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ England": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ France": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Germany": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Greece": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Guatemala": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Haiti": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Honduras": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Hong": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Hungary": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ India": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Iran": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Ireland": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Italy": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Jamaica": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Japan": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Laos": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Mexico": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Nicaragua": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Outlying-US(Guam-USVI-etc)": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Peru": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Philippines": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Poland": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Portugal": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Puerto-Rico": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Scotland": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ South": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Taiwan": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Thailand": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Trinadad&Tobago": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ United-States": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Vietnam": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Native-country_ Yugoslavia": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 4,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "4_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "4_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": "0.3364000344123812",
+    "train_time": 9.259670495986938,
+    "is_stacked": false,
+    "joblib_version": "1.3.2",
+    "threshold": 0.5044276446604778
+}

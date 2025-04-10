@@ -1,0 +1,104 @@
+feature,shap_importance
+Marital status_ Married-civ-spouse,1.1084063
+Age,0.7277332
+Capital-gain,0.62156427
+Education-num,0.49604797
+Hours-per-week,0.3624709
+Capital-loss,0.18226163
+Sex_ Female,0.15728742
+fnlwgt,0.14902204
+Occupation_ Exec-managerial,0.13119836
+Relationship_ Own-child,0.12102554
+Marital status_ Never-married,0.11282878
+Occupation_ Prof-specialty,0.09529401
+Occupation_ Other-service,0.09384007
+Relationship_ Wife,0.08144038
+Relationship_ Not-in-family,0.04575893
+Workclass_ Self-emp-not-inc,0.041712716
+Occupation_ Sales,0.040572267
+Occupation_ Handlers-cleaners,0.03857258
+Occupation_ Farming-fishing,0.037352655
+Workclass_ Federal-gov,0.03312793
+Relationship_ Unmarried,0.032925144
+Race_ White,0.029952995
+Occupation_ Machine-op-inspct,0.026507791
+Workclass_ Private,0.02565589
+Marital status_ Widowed,0.025397127
+Relationship_ Other-relative,0.023975505
+Occupation_ Tech-support,0.023895891
+Relationship_ Husband,0.023293633
+Occupation_ Adm-clerical,0.021796945
+Workclass_ Local-gov,0.021448214
+Workclass_ Self-emp-inc,0.017947303
+Occupation_ Protective-serv,0.017502496
+Occupation_ Transport-moving,0.01562946
+Education_ Some-college,0.015474461
+Native-country_ United-States,0.015126942
+Occupation_ Craft-repair,0.012918058
+Race_ Black,0.012836855
+Race_ Asian-Pac-Islander,0.011006005
+Native-country_ Mexico,0.0104703065
+Workclass_ State-gov,0.008332488
+Race_ Amer-Indian-Eskimo,0.008082402
+Education_ HS-grad,0.0077450597
+Education_ Bachelors,0.007522966
+Education_ Prof-school,0.0060722493
+Marital status_ Married-AF-spouse,0.005882385
+Occupation_ Priv-house-serv,0.0056209243
+Marital status_ Separated,0.004222816
+Native-country_ Dominican-Republic,0.0040833526
+Education_ 10th,0.0040317867
+Native-country_ India,0.003965491
+Education_ Masters,0.003778604
+Native-country_ Italy,0.0037709004
+Marital status_ Divorced,0.0036646116
+Native-country_ Puerto-Rico,0.003611309
+Native-country_ South,0.0032917426
+Native-country_ Philippines,0.003233904
+Native-country_ Columbia,0.0031540086
+Education_ Assoc-acdm,0.002582731
+Marital status_ Married-spouse-absent,0.0022647846
+Native-country_ Canada,0.0018743529
+Native-country_ Vietnam,0.0017659132
+Education_ 11th,0.0017467433
+Native-country_ England,0.0015292094
+Education_ 5th-6th,0.0014664588
+Education_ Assoc-voc,0.0014377187
+Native-country_ Nicaragua,0.001394937
+Race_ Other,0.0012856411
+Native-country_ Germany,0.0012117572
+Native-country_ Cuba,0.0011469831
+Native-country_ Greece,0.0009854906
+Native-country_ China,0.00093815685
+Education_ 7th-8th,0.0008715453
+Native-country_ Jamaica,0.00074796367
+Education_ 9th,0.0006739878
+Native-country_ Guatemala,0.0005769888
+Native-country_ Ireland,0.00032367976
+Native-country_ Iran,0.00023254797
+Education_ 1st-4th,0.00017845417
+Native-country_ Peru,0.0001614865
+Native-country_ Trinadad&Tobago,0.000106761894
+Native-country_ Japan,9.019213e-05
+Native-country_ El-Salvador,5.831137e-05
+Native-country_ Hong,2.6571654e-05
+Native-country_ Outlying-US(Guam-USVI-etc),0.0
+Native-country_ Thailand,0.0
+Native-country_ Taiwan,0.0
+Native-country_ Portugal,0.0
+Native-country_ Scotland,0.0
+Native-country_ Poland,0.0
+Education_ 12th,0.0
+Native-country_ Laos,0.0
+Native-country_ Hungary,0.0
+Native-country_ Honduras,0.0
+Native-country_ Haiti,0.0
+Native-country_ France,0.0
+Native-country_ Ecuador,0.0
+Native-country_ Cambodia,0.0
+Sex_ Male,0.0
+Workclass_ Without-pay,0.0
+Occupation_ Armed-Forces,0.0
+Education_ Preschool,0.0
+Education_ Doctorate,0.0
+Native-country_ Yugoslavia,0.0

@@ -1,0 +1,104 @@
+feature,mean_importance
+Relationship_ Unmarried,-0.0006283077974566509
+Education_ Assoc-voc,-0.00037589667281139326
+Native-country_ Philippines,-0.00026098289378204684
+Race_ Black,-0.0002067958826803662
+Native-country_ India,-0.00020635563785003085
+Education_ HS-grad,-0.00017325340928099343
+Education_ 11th,-0.00014955579217231784
+Occupation_ Sales,-0.0001434030881907189
+Occupation_ Craft-repair,-0.0001378159916731181
+Race_ White,-0.00012065566771216619
+Native-country_ Columbia,-0.00011984035246950241
+Marital status_ Married-spouse-absent,-9.047919259651538e-05
+Native-country_ Canada,-8.726718869317418e-05
+Relationship_ Wife,-8.562804178641192e-05
+Education_ Some-college,-8.156615099800258e-05
+Education_ 7th-8th,-7.43927146472978e-05
+Marital status_ Separated,-6.891082326863086e-05
+Education_ Bachelors,-5.272089107953848e-05
+Occupation_ Priv-house-serv,-5.028700102457373e-05
+Workclass_ Local-gov,-5.0213738061677396e-05
+Education_ Masters,-4.321889071741136e-05
+Native-country_ Dominican-Republic,-3.87418471873624e-05
+Race_ Other,-3.706509234201461e-05
+Native-country_ Vietnam,-2.434023973637567e-05
+Native-country_ Cuba,-2.1556239086828465e-05
+Education_ 9th,-2.600353335746597e-06
+Native-country_ Japan,0.0
+Native-country_ Nicaragua,0.0
+Native-country_ Laos,0.0
+Native-country_ Yugoslavia,0.0
+Sex_ Male,0.0
+Native-country_ Cambodia,0.0
+Native-country_ Ecuador,0.0
+Native-country_ El-Salvador,0.0
+Native-country_ England,0.0
+Native-country_ France,0.0
+Native-country_ Greece,0.0
+Native-country_ Haiti,0.0
+Native-country_ Honduras,0.0
+Native-country_ Hong,0.0
+Native-country_ Hungary,0.0
+Native-country_ Jamaica,0.0
+Native-country_ Outlying-US(Guam-USVI-etc),0.0
+Native-country_ Peru,0.0
+Native-country_ Ireland,0.0
+Education_ 1st-4th,0.0
+Education_ 10th,0.0
+Education_ Doctorate,0.0
+Education_ Preschool,0.0
+Workclass_ Without-pay,0.0
+Native-country_ Scotland,0.0
+Native-country_ Portugal,0.0
+Native-country_ Poland,0.0
+Education_ 12th,0.0
+Native-country_ Taiwan,0.0
+Native-country_ Thailand,0.0
+Occupation_ Armed-Forces,0.0
+Native-country_ Trinadad&Tobago,0.0
+Native-country_ Guatemala,6.460978348588054e-06
+Native-country_ Iran,9.29962811931917e-06
+Native-country_ China,3.0973742840090245e-05
+Native-country_ Germany,3.632220612361792e-05
+Marital status_ Divorced,5.0584947811072034e-05
+Education_ Assoc-acdm,5.5904977754617226e-05
+Occupation_ Adm-clerical,6.279785775398228e-05
+Native-country_ Puerto-Rico,0.00013044922299181304
+Native-country_ South,0.00013264913280000012
+Education_ 5th-6th,0.00015118287804331
+Relationship_ Husband,0.00022319347522476997
+Race_ Asian-Pac-Islander,0.00024265662125341202
+Occupation_ Machine-op-inspct,0.00028729059886623
+Native-country_ United-States,0.00030463151211133075
+Race_ Amer-Indian-Eskimo,0.00034750608978633134
+Workclass_ Self-emp-inc,0.00035903168484138217
+Native-country_ Italy,0.00037194483630601514
+Occupation_ Protective-serv,0.0003944810527120923
+Occupation_ Farming-fishing,0.000540499550984852
+Workclass_ Private,0.0005420712922000082
+Education_ Prof-school,0.0005698763215232327
+Marital status_ Widowed,0.000574663572427514
+Workclass_ State-gov,0.0005961003238052931
+Workclass_ Federal-gov,0.000852515092673245
+Native-country_ Mexico,0.0009303757387457701
+Occupation_ Transport-moving,0.0009808504061208478
+Relationship_ Not-in-family,0.0013024264558980981
+Occupation_ Tech-support,0.0015930048937175978
+Marital status_ Married-AF-spouse,0.0017023936676264563
+fnlwgt,0.0019142810742283078
+Occupation_ Handlers-cleaners,0.0019167247723549385
+Sex_ Female,0.002028950679019914
+Relationship_ Other-relative,0.0022643050994240687
+Workclass_ Self-emp-not-inc,0.002679880353991726
+Marital status_ Never-married,0.003419859934026215
+Occupation_ Prof-specialty,0.0036382184523635285
+Occupation_ Other-service,0.0037440393920256778
+Relationship_ Own-child,0.006741798207164329
+Occupation_ Exec-managerial,0.008165017713265743
+Hours-per-week,0.01069986448333864
+Capital-loss,0.029198439552956403
+Education-num,0.05406082918012213
+Age,0.0804911645640123
+Marital status_ Married-civ-spouse,0.1036113762027753
+Capital-gain,0.19769742689017994

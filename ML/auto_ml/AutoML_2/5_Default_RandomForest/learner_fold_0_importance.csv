@@ -1,0 +1,104 @@
+feature,mean_importance
+Education_ Masters,-0.0003184200738896026
+Occupation_ Handlers-cleaners,-2.235134321805221e-05
+Occupation_ Armed-Forces,-2.2204460492503132e-17
+Native-country_ Germany,-1.1102230246251566e-17
+Native-country_ Columbia,-1.1102230246251566e-17
+Occupation_ Adm-clerical,-1.1102230246251566e-17
+Native-country_ Japan,-1.1102230246251566e-17
+Race_ Black,0.0
+Occupation_ Craft-repair,0.0
+Native-country_ El-Salvador,0.0
+Marital status_ Never-married,0.0
+Marital status_ Married-spouse-absent,0.0
+Native-country_ England,0.0
+Education_ Prof-school,0.0
+Native-country_ Trinadad&Tobago,0.0
+Native-country_ Thailand,0.0
+Native-country_ Taiwan,0.0
+Education_ Doctorate,0.0
+Race_ Asian-Pac-Islander,0.0
+Native-country_ Italy,0.0
+Native-country_ China,0.0
+Native-country_ South,0.0
+Education_ 5th-6th,0.0
+Education_ 1st-4th,0.0
+Sex_ Female,0.0
+Race_ White,0.0
+Native-country_ Peru,0.0
+Native-country_ Poland,0.0
+Workclass_ Self-emp-inc,0.0
+Workclass_ Self-emp-not-inc,0.0
+Workclass_ Without-pay,0.0
+Native-country_ Canada,1.1102230246251566e-17
+Race_ Amer-Indian-Eskimo,1.1102230246251566e-17
+Native-country_ Dominican-Republic,1.1102230246251566e-17
+Sex_ Male,1.1102230246251566e-17
+Native-country_ Cuba,1.1102230246251566e-17
+Race_ Other,1.1102230246251566e-17
+Relationship_ Not-in-family,1.1102230246251566e-17
+Native-country_ Haiti,1.1102230246251566e-17
+Native-country_ France,1.1102230246251566e-17
+Native-country_ Guatemala,1.1102230246251566e-17
+Relationship_ Wife,1.1102230246251566e-17
+Native-country_ Hungary,1.1102230246251566e-17
+Native-country_ Iran,1.1102230246251566e-17
+Native-country_ Ireland,1.1102230246251566e-17
+Native-country_ Jamaica,1.1102230246251566e-17
+Native-country_ Laos,1.1102230246251566e-17
+Native-country_ Nicaragua,1.1102230246251566e-17
+Native-country_ Philippines,1.1102230246251566e-17
+Native-country_ Portugal,1.1102230246251566e-17
+Native-country_ Puerto-Rico,1.1102230246251566e-17
+Native-country_ United-States,1.1102230246251566e-17
+Native-country_ Ecuador,1.1102230246251566e-17
+Relationship_ Unmarried,1.1102230246251566e-17
+Native-country_ Yugoslavia,1.1102230246251566e-17
+Relationship_ Other-relative,1.1102230246251566e-17
+Education_ Bachelors,1.1102230246251566e-17
+Marital status_ Divorced,1.1102230246251566e-17
+Education_ Assoc-voc,1.1102230246251566e-17
+Marital status_ Separated,1.1102230246251566e-17
+Marital status_ Widowed,1.1102230246251566e-17
+Education_ 9th,1.1102230246251566e-17
+Education_ HS-grad,1.1102230246251566e-17
+Education_ 11th,1.1102230246251566e-17
+Relationship_ Own-child,1.1102230246251566e-17
+Education_ 10th,1.1102230246251566e-17
+Occupation_ Prof-specialty,1.1102230246251566e-17
+Workclass_ State-gov,1.1102230246251566e-17
+Workclass_ Private,1.1102230246251566e-17
+Workclass_ Local-gov,1.1102230246251566e-17
+Occupation_ Transport-moving,1.1102230246251566e-17
+Native-country_ Vietnam,1.1102230246251566e-17
+Education_ 7th-8th,2.2204460492503132e-17
+Education_ Assoc-acdm,2.2204460492503132e-17
+Native-country_ Scotland,2.2204460492503132e-17
+Native-country_ India,2.2204460492503132e-17
+Native-country_ Outlying-US(Guam-USVI-etc),2.2204460492503132e-17
+Education_ 12th,2.2204460492503132e-17
+Native-country_ Hong,2.2204460492503132e-17
+Education_ Preschool,2.2204460492503132e-17
+Relationship_ Husband,2.2204460492503132e-17
+Occupation_ Sales,2.2204460492503132e-17
+Occupation_ Protective-serv,2.2204460492503132e-17
+Native-country_ Honduras,2.2204460492503132e-17
+Occupation_ Priv-house-serv,2.2204460492503132e-17
+Occupation_ Machine-op-inspct,2.2204460492503132e-17
+Native-country_ Cambodia,2.2204460492503132e-17
+Marital status_ Married-AF-spouse,2.2204460492503132e-17
+Native-country_ Greece,2.2204460492503132e-17
+Native-country_ Mexico,3.3306690738754695e-17
+Occupation_ Tech-support,3.3306690738754695e-17
+Workclass_ Federal-gov,3.3306690738754695e-17
+Education_ Some-college,3.3306690738754695e-17
+Occupation_ Farming-fishing,9.753527448563837e-06
+Occupation_ Exec-managerial,8.542655737977522e-05
+fnlwgt,9.314157114329591e-05
+Occupation_ Other-service,0.0003618159820065192
+Age,0.002221376172769163
+Capital-loss,0.0074117748113313175
+Hours-per-week,0.007845385566830797
+Education-num,0.07190323833745152
+Capital-gain,0.17039326301789287
+Marital status_ Married-civ-spouse,0.21817057791811326

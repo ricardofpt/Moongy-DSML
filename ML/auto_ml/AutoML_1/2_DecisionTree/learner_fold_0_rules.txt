@@ -1,0 +1,16 @@
+if (Marital status_ Married-civ-spouse <= 0.5) and (Capital-gain <= 7073.5) and (Education-num <= 12.5) then class: 0 (proba: 97.51%) | based on 9,373 samples
+
+if (Marital status_ Married-civ-spouse > 0.5) and (Education-num <= 12.5) and (Capital-gain <= 5095.5) then class: 0 (proba: 69.54%) | based on 7,117 samples
+
+if (Marital status_ Married-civ-spouse > 0.5) and (Education-num > 12.5) and (Capital-gain <= 5095.5) then class: 1 (proba: 67.91%) | based on 2,649 samples
+
+if (Marital status_ Married-civ-spouse <= 0.5) and (Capital-gain <= 7073.5) and (Education-num > 12.5) then class: 0 (proba: 84.86%) | based on 2,397 samples
+
+if (Marital status_ Married-civ-spouse > 0.5) and (Education-num > 12.5) and (Capital-gain > 5095.5) then class: 1 (proba: 99.79%) | based on 468 samples
+
+if (Marital status_ Married-civ-spouse > 0.5) and (Education-num <= 12.5) and (Capital-gain > 5095.5) then class: 1 (proba: 97.69%) | based on 390 samples
+
+if (Marital status_ Married-civ-spouse <= 0.5) and (Capital-gain > 7073.5) and (Age > 20.5) then class: 1 (proba: 98.21%) | based on 224 samples
+
+if (Marital status_ Married-civ-spouse <= 0.5) and (Capital-gain > 7073.5) and (Age <= 20.5) then class: 0 (proba: 100.0%) | based on 2 samples
+

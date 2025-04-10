@@ -1,0 +1,202 @@
+{
+    "uid": "93849ec8-fdc4-4f14-9ec6-a112696d9a0b",
+    "name": "4_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        13.14334578684146,
+                        106258.8572612915,
+                        2.5453762677630647,
+                        7637.095446499782,
+                        402.2403523779414,
+                        12.03894951683806,
+                        0.43920830221437557,
+                        0.34823029240086956,
+                        0.4672153507286712,
+                        0.28377264788782625
+                    ],
+                    "mean": [
+                        38.47727674624226,
+                        189509.1675066313,
+                        10.11290893015031,
+                        1123.9670203359858,
+                        87.73793103448276,
+                        41.00583554376658,
+                        0.73894783377542,
+                        0.8587975243147657,
+                        0.6780725022104332,
+                        0.9116710875331565
+                    ],
+                    "var": [
+                        172.74753847248314,
+                        11290944746.475523,
+                        6.478940344491428,
+                        58325226.8589477,
+                        161797.30108113048,
+                        144.93630546897535,
+                        0.19290393273403428,
+                        0.12126433654559511,
+                        0.21829018395651525,
+                        0.0805269156892682
+                    ],
+                    "n_samples_seen": 22620,
+                    "n_features_in": 10,
+                    "columns": [
+                        "Age",
+                        "fnlwgt",
+                        "Education-num",
+                        "Capital-gain",
+                        "Capital-loss",
+                        "Hours-per-week",
+                        "Workclass_ Private",
+                        "Race_ White",
+                        "Sex_ Male",
+                        "Native-country_ United-States"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Age": [
+                        "scale_normal"
+                    ],
+                    "fnlwgt": [
+                        "scale_normal"
+                    ],
+                    "Education-num": [
+                        "scale_normal"
+                    ],
+                    "Capital-gain": [
+                        "scale_normal"
+                    ],
+                    "Capital-loss": [
+                        "scale_normal"
+                    ],
+                    "Hours-per-week": [
+                        "scale_normal"
+                    ],
+                    "Workclass_ Private": [
+                        "scale_normal"
+                    ],
+                    "Race_ White": [
+                        "scale_normal"
+                    ],
+                    "Sex_ Male": [
+                        "scale_normal"
+                    ],
+                    "Native-country_ United-States": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "48ed1091-5e35-48a1-a5aa-fbcd8c094739",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 4,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Age": [
+                    "scale_normal"
+                ],
+                "fnlwgt": [
+                    "scale_normal"
+                ],
+                "Education-num": [
+                    "scale_normal"
+                ],
+                "Capital-gain": [
+                    "scale_normal"
+                ],
+                "Capital-loss": [
+                    "scale_normal"
+                ],
+                "Hours-per-week": [
+                    "scale_normal"
+                ],
+                "Workclass_ Private": [
+                    "scale_normal"
+                ],
+                "Race_ White": [
+                    "scale_normal"
+                ],
+                "Sex_ Male": [
+                    "scale_normal"
+                ],
+                "Native-country_ United-States": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1/X.data",
+            "y_path": "AutoML_1/y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 4,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "4_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "4_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.3227744819694353,
+    "train_time": 15.425920963287354,
+    "is_stacked": false,
+    "threshold": 0.3791475822722111
+}
